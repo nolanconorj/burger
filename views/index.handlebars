@@ -1,18 +1,45 @@
-<h1>Eat-Da-Burger!</h1>
+<div class="container">
+    
+    <div class="container" id= "topRow">
+    <div class="row">
+      <div class="col s12 center">
+<h1>Eat-Da-Burger</h1>
+        <!--Closes h1 col div-->
+        </div>
+        <!--Closes h1 row div-->
+    </div>
+    <!--Closes top row div-->
+    </div>
 
+<div class= "container">
+    <div class= "row"> 
+        <div class = "col s12 center">
+  
 <h2>Add a Burger</h2>
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">Enter a Burger you'd like to eat!</label>
-    <input type="text" id="ca" name="name">
+    <label for="ca"></label>
+    <input placeholder ="Enter a Burger you'd like to eat!" type="text" id="ca" name="name" class ="center">
   </div>
 
-
-  <button type="submit">Add Burger</button>
+    <button class="btn waves-effect waves-light" type="submit" name="action">Add Burger
+    <i class="material-icons right">restaurant</i>
+    </button>
+  
 </form>
+<!--Closes first col div-->
+        </div>
+<!--Closes first row div-->
+    </div>
+    <!--Closes first container Div-->
+</div>
 
-<h2>Burgers you want to eat!</h2>
+
+<div = "container">
+    <div class= "row"> 
+        <div class = "col l6">
+<h3>Burgers you want to eat!</h3>
 
 <ul>
   {{#each burgers}}
@@ -21,8 +48,13 @@
     {{/unless}}
   {{/each}}
 </ul>
+<!--Closes burgers you want to eat col div-->
+        </div>
 
-<h2>Burgers Devoured!</h2>
+
+    
+        <div class = "col l6">
+<h3>Burgers Devoured!</h3>
 
 <ul>
   {{#each burgers}}
@@ -31,4 +63,13 @@
     {{/if}}
   {{/each}}
 </ul>
+
+        <!--Closes burgers devoured col div-->
+        </div>
+    <!--Closes burgers devoured row div-->
+    </div>
+<!--Closes second container div-->
+</div>
+<!--Master page container div-->
+</div>
 
