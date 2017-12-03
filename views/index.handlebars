@@ -11,11 +11,17 @@
     <!--Closes top row div-->
     </div>
 
+
+<div class= "container center">
+    <img class="responsive-img" src="https://media.giphy.com/media/UxzmReuU4YOOY/giphy.gif">
+    <!--Closes img div-->
+    </div>
+
 <div class= "container">
     <div class= "row"> 
         <div class = "col s12 center">
   
-<h2>Add a Burger</h2>
+<h3>Add-Da-Burger</h3>
 <form class="create-form">
 
   <div class="form-group">
@@ -23,7 +29,7 @@
     <input placeholder ="Enter a Burger you'd like to eat!" type="text" id="ca" name="name" class ="center">
   </div>
 
-    <button class="btn waves-effect waves-light" type="submit" name="action">Add Burger
+    <button class="btn waves-effect waves-light orange darken-4" type="submit" name="action">Add Burger
     <i class="material-icons right">restaurant</i>
     </button>
   
@@ -39,9 +45,9 @@
 <div = "container">
     <div class= "row"> 
         <div class = "col l6">
-<h3>Burgers you want to eat!</h3>
+<h4 class="center">Da-Burgers!</h4>
 
-<ul>
+<ul class="collection">
   {{#each burgers}}
     {{#unless devoured}}
       {{> burgers/burger-block devoured=true}}
@@ -54,9 +60,9 @@
 
     
         <div class = "col l6">
-<h3>Burgers Devoured!</h3>
+<h4 class="center">Devoured Burgers</h4>
 
-<ul>
+<ul class="collection">
   {{#each burgers}}
     {{#if devoured}}
       {{> burgers/burger-block devoured=false}}
@@ -72,4 +78,15 @@
 </div>
 <!--Master page container div-->
 </div>
+
+
+<!--Footer-->
+<footer class="page-footer orange">
+<div class="center">
+           
+            © 2017 Created by Conor Nolan
+            
+          </div>
+          <br>
+        </footer>
 
